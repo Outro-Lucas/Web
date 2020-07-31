@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Editar Produto</title>
+</head>
+<body>
+	<div style="color:#800080">
+		<h1>Edite os dados de seu produto.</h1>	
+	</div>
+
+	<form action="leitura.html" method="GET">
+		<div>
+			<label for"name">Nome:</label>
+			<input type="text" name="name" id="leitura" value="Lucas Ferreira">
+		</div><br>
+
+		<div>
+			<label for"cnpj">CPF:</label>
+			<input type="text" name="cpf" id="leitura" value="678.034.234-05">
+		</div><br>
+		
+		<div>
+			<label for"email">Email:</label>
+			<input type="Email" name="email" id="leitura" value="lucasferreirapacoti@gmail.com">
+		</div><br>
+		
+		<div>
+			<label for"numero">Telefone:</label>
+			<input type="tel" name="phone" pattern="[0-9]{1}[0-9]{4}-[0-9]{4}" id="leitura" value="98873-5167">
+		</div><br>
+
+		<div>
+			<label for"produto">Produto:</label>
+			<input type="text" name="prod" id="leitura" value="Camisa">
+		</div><br>
+		
+		<div>
+			<label for"date">Data de anuncio:</label>
+			<input type="date" name="data" id="leitura" value="2020-07-01">
+		</div><br>
+
+		<div>
+			<label for"preco">Preço:</label>
+			<input type="number" name="preco" id="leitura" value="30">
+		</div><br>
+
+		<div>
+			<label for"quantity">Número de Unidades:</label>
+			<input type="number" name="unidades" id="leitura" value="7">
+		</div><br>
+
+		<div>
+			<label for"frete">Frete Gratuito:</label>
+			<input type="checkbox" name="frete" id="leitura" value="on">
+		</div><br><br>
+
+		<button type="submit"><span style="color:purple;">ATUALIZAR</span></button>	
+
+		<a href="leitura.html">
+		
+	</form>
+</body>
+</html>
