@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+	
+</head>
+
+<title>Menu de Cadastro</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+	<center>
+	<p>
+	<font color="white">
+		<H1>Projeto adaptado - Des Web</H1>
+		Exemplo de formulário de pesquisa(Survey)	
+	</font>
+	
+	</p>
+
+	<form>
+		<div align="justify" 
+			 style="color:#FFFFFF" 
+			 class="formulário">
+			<label for = Nome>Nome</label><br>
+			<input type="text" size="50" name="Nome"  placeholder="Coloque seu nome" required="Nome">	
+	    </div>
+
+		<br>
+
+		<div align="justify" 
+			 style="color:#FFFFFF" 
+			 class="formulário">
+			<label for = Email>Email</label><br>
+			<input type="email" size="50" name="Email" placeholder="Coloque seu Email" required="Email">
+		</div>
+
+		<br>
+
+		<div align="justify" 
+			 style="color:#FFFFFF"
+			 class="formulário">
+			<label for = Idade>Idade</label><br>
+			<input type="num" size="50" name="Idade" placeholder="Idade" required="Idade">
+		</div>
+
+		<br>
+		
+		<div align="justify" 
+			 style="color:#FFFFFF"
+			 class="formulário">
+			<label for = ocupaçao>Qual opção melhor descreve o seu estado atual?</label><br>
+			<select id = ocupaçao name="ocupaçao">
+				<option value="não sei 1">Solteiro</option>
+				<option value="não sei 2">Casado</option>
+				<option value="não sei 3">Divorciado</option>
+			</select>
+		</div>
+		
+		<br>
+		
+		<div align="justify" 
+			 style="color:#FFFFFF"
+		 	 class="container1">
+			Você recomendaria este projeto?<br>
+			<input type="checkbox" nome="recomedaria" id="comCerteza">
+			<label for =comCerteza>Com cereteza!</label>
+			<br>
+			<input type="checkbox" nome="recomedaria" id="Talvez">
+			<label for =Talvez>Talvez</label>
+			<br>
+			<input type="checkbox" nome="recomedaria" id="naoSei">
+			<label for =naoSei>Não sei</label>
+			<br>
+		</div>
+		
+		<br>
+		
+		<div align="justify" 
+			 style="color:#FFFFFF"
+			 class="container2">
+			O que você gostaria de melhorar? (Selecione quantos quiser.)<br>
+			<input type="checkbox" nome="gostaria" id="tempoEstudar">
+			<label for =tempoEstudar>Ter mais tempo para estudar</label>
+			<br>
+			<input type="checkbox" nome="gostaria" id="estudarOqGosta">
+			<label for =estudarOqGosta>Estudar mais o que gosto</label>
+			<br>
+			<input type="checkbox" nome="gostaria" id="gerenciaDeProjetos">
+			<label for =gerenciaDeProjetos>Gerência de projetos</label>
+			<br>
+			<input type="checkbox" nome="gostaria" id="nodeJS">
+			<label for =nodeJS>Node JS</label>
+		</div>
+		
+		<br>
+
+		<div align="justify" 
+			 style="color:#FFFFFF">
+	        <label for="msg" size="50" maxlength="3">Algum comentário ou sugestão?</label><br>
+	        <textarea id="msg"></textarea>
+    	</div>
+
+		<input type="submit" value="Enviar">
+	</form>
+	</center>
+</body>

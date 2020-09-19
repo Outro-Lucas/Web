@@ -1,0 +1,2 @@
+Olá professor ficamos com um erro na hora de salvar em um arquivo, se você olhar na pasta html o arquivo index e abrí-lo normalmente, verá que ele salva em txt porém, quando ele é chamado no servidor acaba pulando esse passo.
+E também outro erro foi que só conseguirmos usar dois caminhos get e um post.

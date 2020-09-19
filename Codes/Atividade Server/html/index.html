@@ -1,0 +1,55 @@
+<html>
+<head>
+   <style>
+   div {
+     min-width: 300px;
+     width: 50%;
+     margin: 10px auto;
+   }
+   input,
+   textarea {
+     width: 100%;
+     min-width: 250px;
+   }
+   </style>
+</head>
+<body>
+   <h3>Realizar Login</h3>
+
+   <form action="/prox" method="post">
+   <div>
+     <label for="input-fileName">Nome de Usuario</label><br/>
+     <input type="text" id="titulo" placeholder="Nome do Arquivo">
+   </div>
+   <div>
+      <label for="pass">Senha (6 characters minimum):</label>
+      <input type="password" id="password" minlength="6" required>
+  </div>
+   <div>
+     <button onclick="salvar()">ENTRAR</button>
+   </div>
+
+   <br>
+   
+   <!-- Biblioteca que adicionara o código -->
+   <script type="text/javascript" src="fileSaver.js"></script>
+   <!-- função ao clicar em salvar -->
+   <script>
+
+
+   function salvar() {
+      
+      let texto = "Nick: " + document.getElementById("titulo").value + " " + "Senha: " + document.getElementById("password").value;
+      let titulo = document.getElementById("titulo").value;
+      let blob = new Blob([texto], { type: "text/plain;charset=utf-8" });
+      saveAs(blob, titulo + ".txt");
+   }
+   </script>
+</form>
+
+<form action="/equipe" method="post">
+   <a href="http://localhost:9999/equipe">Equipe</a>  
+</form>
+
+</body>
+</html>
