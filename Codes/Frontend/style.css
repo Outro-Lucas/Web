@@ -1,0 +1,115 @@
+body
+{
+	margin 0;
+	padding: 0;
+	background-color: #e8e8e8;
+	font-family: sans-serif;
+	background-size: cover;
+	background-position: center;
+}
+
+div {
+    width: 875px;
+    top: 80px;
+    margin: 0 auto 0 auto;
+}
+
+.container{
+	background: #fff;
+	height: 75vh;
+	position: relative;
+}
+
+.logar
+{
+	width: 350px;
+	background: #fff;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+	float : left;
+}
+
+.logar h1
+{
+	margin-bottom: 30px;
+}
+
+.input-box{
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	border: 1px solid #999;
+	outline: none;
+}
+
+button{
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-logar{
+	background-color: #1c8adb;
+}
+
+.redirecionar{
+	width: 400px;
+	padding: 20px;
+	margin: 8% auto 0;
+	text-align: center;
+	float : left;
+}
+
+.fr{
+	margin-left: inherit;
+	margin-right: -50px;
+}
+
+.btn-mudar {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1c8adb;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 340px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+}
+
+.btn-mudar span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-mudar span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-mudar:hover span {
+  padding-right: 25px;
+}
+
+.btn-mudar:hover span:after {
+  opacity: 1;
+  right: 0;
+}
